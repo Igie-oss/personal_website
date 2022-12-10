@@ -1,6 +1,6 @@
 import React from 'react'
 import { Element} from 'react-scroll'
-const About = () => {
+const AboutSection = () => {
   return (
 <Element name="about">
       <div  className="w-full h-screen">About</div>
@@ -8,4 +8,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutSection

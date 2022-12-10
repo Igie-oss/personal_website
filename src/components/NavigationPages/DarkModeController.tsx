@@ -29,10 +29,9 @@ const DarkModeController = () => {
   }
 
   return (
-    <div className="flex flex-col gap-1 items-center">
-      <h1 className="text-sm font-semibold">Theme</h1>
+   
       <button
-        className="w-16 h-fit py-1 px-2 bg-primaryLight text-primaryDark dark:bg-primaryDark dark:text-primaryLight flex  justify-between rounded-xl"
+        className="w-14 h-fit py-[2px] px-2 bg-primaryDark dark:bg-primaryLight text-primaryLight dark:text-primaryDark   flex  justify-between rounded-xl"
         onClick={toggleMode}
       >
         <div className="w-fit h-fit rounded-full">
@@ -56,7 +55,6 @@ const DarkModeController = () => {
           )}
         </div>
       </button>
-    </div>
   )
 }
 

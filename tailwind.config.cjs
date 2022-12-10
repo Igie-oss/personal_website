@@ -10,7 +10,7 @@ module.exports = {
             colors: {
                 primaryLight: "#FFFFFF",
                 secondaryLight: "#54B689",
-                btnLight: "#",
+                btnLight: "#1976D2",
                 textLight: "#000000",
                 primaryDark: "#111821",
                 secondaryDark: "#",
