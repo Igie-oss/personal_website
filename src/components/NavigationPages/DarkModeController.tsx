@@ -31,7 +31,8 @@ const DarkModeController = () => {
   return (
    
       <button
-        className="w-14 h-fit py-[2px] px-2 bg-primaryDark dark:bg-primaryLight text-primaryLight dark:text-primaryDark   flex  justify-between rounded-xl"
+        className="w-14 h-fit py-[2px] px-2 border-2 border-primaryDark dark:border-primaryLight bg-primaryDark dark:bg-primaryLight text-primaryLight dark:text-primaryDark flex justify-between rounded-xl outline-none
+        relative after:content-['Theme'] after:absolute after:-top-5 after:left-1 after:text-xs after:text-textLight dark:after:text-textDark after:hidden hover:after:block transition-all after:font-bold"
         onClick={toggleMode}
       >
         <div className="w-fit h-fit rounded-full">

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Nerko+One&family=Noto+Sans:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
 * {
     // font-family: 'Almarai', sans-serif;
     // font-family: 'Nerko One', cursive;
-    font-family: 'Noto Sans', sans-serif !important;
+    font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ $btnLight: #1976D2;
     position: absolute;
     width: 0;
     height: 2px;
-    left: -10px;
+    left: -9px;
     bottom: -2px;
     background: $btnLight;
     transition: 0.5s ease-in-out;
@@ -30,4 +30,26 @@ $btnLight: #1976D2;
 
 .link:hover::before {
     width: 140%;
+}
+
+.activeLink {
+    color: $btnLight;
+    position: relative;
+}
+
+.activeLink::before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 2px;
+    left: -9px;
+    bottom: -2px;
+    background: $btnLight;
+    transition: 0.5s ease-in-out;
+}
+
+.text-name,
+.logo {
+    // text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+    text-shadow: 0 1px 0 rgba(204, 204, 204, 0.82), 0 2px 0 #c9c9c9e3, 0 3px 0 rgba(187, 187, 187, 0.912), 0 4px 0 #b9b9b9df, 0 5px 0 rgba(170, 170, 170, 0.899), 0 6px 1px rgba(0, 0, 0, 0.043), 0 0 5px rgba(0, 0, 0, 0.063), 0 1px 3px rgba(0, 0, 0, 0.201), 0 3px 5px rgba(0, 0, 0, 0.128), 0 5px 10px rgba(0, 0, 0, 0.142), 0 10px 10px rgba(0, 0, 0, 0.115), 0 20px 20px rgba(0, 0, 0, 0.069);
 }
